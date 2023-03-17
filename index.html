@@ -330,15 +330,20 @@
             <div class="fila">
                 <!-- Formulario -->
                 <div class="col">
-                    <input type="text" placeholder="Tú Nombre">
-                    <input type="text" placeholder="Número telefónico">
-                    <input type="text" placeholder="Dirección de correo">
-                    <input type="text" placeholder="Tema">
-                    <textarea name="" id="" cols="30" rows="10" placeholder="Mensaje"></textarea>
-                    <button>
+                    <form action="enviar.php" method="post"> 
+                    <input type="text" name="name" id="name" class="name" placeholder="Tú Nombre">
+                    <input type="text" name="phone" id="subject" class="subject" placeholder="Número telefónico">
+                    <input type="text" name="mail" id="mail" class="mail" placeholder="Dirección de correo">
+                    <input type="text" name="topic" id="topic" class="topic" placeholder="Tema">
+                    <textarea name="message" id="message" class="message" cols="30" rows="10" placeholder="Mensaje"></textarea>
+                    
+                    <div class="clear"></div>
+                    <!--<div class="col-md-8"></div>-->
+                    <button type="submit" class="btn btn-primary">
                         Enviar Mensaje<a class="fa-solid fa-paper-plane"></a>
                         <span class="overlay"></span>
                     </button>
+                    </form>
                 </div>
                 <!-- Mapa -->
                 <div class="col">
